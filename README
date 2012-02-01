@@ -6,7 +6,7 @@ This is a short and sweet Ruby script that gets your TI Chronos eZ430 watch emit
 
 Why would you want to do that? A couple ideas:
 
-* Write a chrome extension that watches for events and does something neat:
+* Write a chrome extension that watches for WebSockets events and:
   * Retweets the active tab
   * Saves an article to Instapaper
   * Goes to the next message in GMail
@@ -16,4 +16,22 @@ Why would you want to do that? A couple ideas:
 
 The options are endless.
 
-Do something cool? Let me know! I'd love to hear about it.
+Getting started:
+
+# Setup a pusher.com API account (Free 100k messages per day)
+# Edit serial_interface.rb and set your Pusher.com credentials
+# Install the gems:
+
+    gem install ruby-serialport
+    gem install pusher
+
+# Start the script:
+
+    ruby serial_interface.rb
+
+# Put your watch in PPT mode, hit some buttons
+# Code something great since your watch is talking to the web
+
+
+Write something cool? Let me know! I'd love to hear about it.
+
