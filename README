@@ -2,7 +2,7 @@ You know what's cool? Smart devices.
 
 You know what's really cool? Making smart devices communicate seamlessly with the web.
 
-This is a short Ruby script that gets your TI Chronos eZ430 watch emitting WebSockets events. Right now it'll capture top left, top right, and bottom left button presses when the watch is in PPT mode and connected to a computer.
+This is a short Ruby script that gets your TI Chronos eZ430 watch (http://processors.wiki.ti.com/index.php/EZ430-Chronos) emitting WebSockets events. Right now it'll capture top left, top right, and bottom left button presses when the watch is in PPT mode and connected to a computer.
 
 Once it captures these button presses it sends off WebSockets events to Pusher.com (a free WebSockets API).
 
