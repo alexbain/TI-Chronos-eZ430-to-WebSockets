@@ -1,0 +1,19 @@
+You know what's cool? Smart devices.
+
+You know what's really cool? Making smart devices communicate seamlessly with the web.
+
+This is a short and sweet Ruby script that gets your TI Chronos eZ430 watch emitting WebSockets events.
+
+Why would you want to do that? A couple ideas:
+
+* Write a chrome extension that watches for events and does something neat:
+  * Retweets the active tab
+  * Saves an article to Instapaper
+  * Goes to the next message in GMail
+  * Closes all the open tabs
+* Write web apps? Bind a watch button to run your tests or deploy your app.
+* Have another embedded system that speaks WebSocket? Tap a watch button and trigger an event on the device.
+
+The options are endless.
+
+Do something cool? Let me know! I'd love to hear about it.
