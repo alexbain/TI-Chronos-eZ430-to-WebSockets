@@ -2,25 +2,29 @@ You know what's cool? Smart devices.
 
 You know what's really cool? Making smart devices communicate seamlessly with the web.
 
-This is a short and sweet Ruby script that gets your TI Chronos eZ430 watch emitting WebSockets events.
+This is a short Ruby script that gets your TI Chronos eZ430 watch emitting WebSockets events. Right now it'll capture top left, top right, and bottom left button presses when the watch is in PPT mode and connected to a computer.
 
-Why would you want to do that? A couple ideas:
+Once it captures these button presses it sends off WebSockets events to Pusher.com (a free WebSockets API).
 
-* Write a chrome extension that watches for WebSockets events and:
-  * Retweets the active tab
-  * Saves an article to Instapaper
-  * Goes to the next message in GMail
-  * Closes all the open tabs
-* Write web apps? Bind a watch button to run your tests or deploy your app.
-* Have another embedded system that speaks WebSocket? Tap a watch button and trigger an event on the device.
+Why would you want to do that? Lots of reasons. Here area a couple ideas:
+
+* Write a chrome extension that watches for WebSockets events from your watch and:
+  * Retweets the active tab to Twitter
+  * Save an article to Instapaper
+  * Go to the next message in GMail
+  * Close all the open tabs
+  * Open a series of browser tabs set to specific URLs.
+  * Anything your heart imagines.
+* Do you write web apps? Write a script that watches for WebSockets events and bind a watch button to run your tests or deploy your app.
+* Have another embedded system that speaks WebSockets? Tap a watch button and trigger an event on the device.
 
 The options are endless.
 
 Getting started:
 
-# Setup a pusher.com API account (Free 100k messages per day)
-# Edit serial_interface.rb and set your Pusher.com credentials
-# Install the gems:
+# Create a pusher.com API account (Free 100k messages per day)
+# Edit serial_interface.rb and add your Pusher.com credentials
+# Install these gems:
 
     gem install ruby-serialport
     gem install pusher
@@ -29,9 +33,8 @@ Getting started:
 
     ruby serial_interface.rb
 
-# Put your watch in PPT mode, hit some buttons
-# Code something great since your watch is talking to the web
+# Put your watch in PPT mode, start hitting some buttons
+# Code something great since your watch now talks to the web
 
 
 Write something cool? Let me know! I'd love to hear about it.
-
